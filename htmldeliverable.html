@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)file:///C:/Users/zhenw/OneDrive/Documents/HTML%20Deliverable%20-%205/htmldeliverable.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+}
+function validateForm() {
+  var x = document.forms["myForm"]["lname"].value;
+  if (x == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+}
+function validateForm() {
+  var x = document.forms["myForm"]["emailaddress"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="file:///C:/action_page.php" onsubmit="return validateForm()" method="post">
+  First Name: <input type="text" id="fname" required="">
+  <br>
+  Last Name: <input type="text" id="lname" required="">
+  <br>
+  Email Address: <input type="email" id="emailaddress" required="">
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+</body></html>
